@@ -1,11 +1,3 @@
-import subprocess
-import sys
-
-
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-install("requests")
-install("bs4")
 import requests
 import urllib.request
 import time
@@ -43,7 +35,3 @@ for j in x:
 list.pop(0)
 for i in list:
     print(i)
-'''
-for i in range(1, len(list)):
-    print(list[i])
-'''
