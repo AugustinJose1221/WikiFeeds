@@ -32,5 +32,9 @@ list = []
 for j in x:
     if j!='':
         list.append(j)
+list.pop(0)
+print(list)
+'''
 for i in range(1, len(list)):
     print(list[i])
+'''
