@@ -1,3 +1,11 @@
+import subprocess
+import sys
+
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+install("requests")
+install("bs4")
 import requests
 import urllib.request
 import time
